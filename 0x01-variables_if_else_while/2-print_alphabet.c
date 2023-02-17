@@ -14,4 +14,4 @@ for (num = 'a'; num <= 'z'; num++)
 putchar(num);
 }
 putchar('\n');
- return (0);}
+return (0); }
