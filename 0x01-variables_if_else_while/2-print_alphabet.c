@@ -3,15 +3,16 @@
 
 /**
  * main - Entry point
- * Description: print the alphabet in lowercase always
- * Return: 0 
-*/
+ * Description: prints the alphabet in lowercase
+ * Return: 0
+ */
 int main(void)
 {
-int num;
-for (num = 'a'; num <= 'z'; num++)
+int c;
+for (c = 'a'; c <= 'z'; c++)
 {
-putchar(num);
+putchar(c);
 }
 putchar('\n');
-return (0); }
+return (0);
+}
