@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
- 
 /**
- * main - Entry point for the program
- * Description: perform a series of actions
- * Return: 0
-*/
+ * main - Entry point
+ * Description: Print base 16 numbers
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 char c;
