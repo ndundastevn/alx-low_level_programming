@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - entry point for the program
+ * Description: Test the value if a number to check wether it is positive or negative
+ * Return: 0
+*/
+
 int main(void)
 {
 	int n;
