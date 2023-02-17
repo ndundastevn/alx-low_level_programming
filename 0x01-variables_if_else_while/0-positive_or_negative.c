@@ -3,28 +3,26 @@
 #include <time.h>
 
 /**
- * main - entry point for the program
- * Description: Test the value if a number to check wether it is positive or negative
+ * main - entry point
+ * Description: prints  if a number is positive or negative.
  * Return: 0
-*/
-
+ */
 int main(void)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	return (0);
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d is positive\n", n);
+}
+else if (n == 0)
+{
+printf("%d is zero\n", n);
+}
+else if (n < 0)
+{
+printf("%d is negative\n", n);
+}
+return (0);
 }
