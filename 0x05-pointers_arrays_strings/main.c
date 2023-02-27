@@ -9,10 +9,10 @@
 int main(void)
 {
 
-  int a = 98;
-  int b = 42;
+  char* str;
+  int len;
 
-  swap_int(&a, &b);
+ len =  _strlen(str);
   
 return (0);
 }
