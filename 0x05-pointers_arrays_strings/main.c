@@ -9,9 +9,10 @@
 int main(void)
 {
 
-  int n = 402;
+  int a = 98;
+  int b = 42;
 
-  reset_to_98(&n);
+  swap_int(&a, &b);
   
 return (0);
 }
