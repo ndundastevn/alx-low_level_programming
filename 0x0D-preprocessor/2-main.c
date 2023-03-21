@@ -2,9 +2,10 @@
 /*
  *main - outputs file name
  *
- *return - success
+ *return: success
  */
 int main()
 {
   printf("%s", __FILE__);
+  return (0);
 }
