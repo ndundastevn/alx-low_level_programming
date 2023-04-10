@@ -3,26 +3,27 @@
 
 /**
  * print_binary - print binary representation of a number
- * @n: decimal number to print 
+ * @n: decimal number to print as binary
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int tt;
-	int sh;
+	unsigned long int temp;
+	int shifts;
 
 	if (n == 0)
 	{
-		_putchar("0");
+		printf("0");
 		return;
 	}
 
-	for (tt = n, sh = 0; (tt >>= 1) > 0; sh++);
+	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
+		;
 
-	for (; sh >= 0; sh--)
+	for (; shifts >= 0; shifts--)
 	{
-		if ((n >> sh) & 1)
-			_putchar("1");
+		if ((n >> shifts) & 1)
+			printf("1");
 		else
-			_putchar("0");
+			printf("0");
 	}
 }
