@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * flip_bits - calulates the number of bits to flip to get from one number to another
@@ -9,19 +8,9 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int dd;
-	int cc;
-	unsigned int j, i;
-
-	j = 0;
-	for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
-	{
-		if (j < sizeof(unsigned long int) * 8)
-			j++;
-        }
-
-	dd = n ^ m;
-	cc = 0;
+	unsigned long int dd = n ^ m;
+	int cc = 0;
+	unsigned int jj, ii;
 
 	while (dd)
 	{
