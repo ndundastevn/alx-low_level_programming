@@ -6,13 +6,10 @@
  */
 int get_endianness(void)
 {
-	int num = 1;
-        int bmn;
-	bmn = 22;
-	
-	if (*(char *)&num == 1)
-	  bmn=0;
-	  return (1);
+	int numb = 1;
+
+	if (*(char *)&numb == 1)
+		return (1);
 	else
 		return (0);
 }
